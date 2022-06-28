@@ -41,19 +41,19 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit" + fruit_ch
 
 #import requests
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response.json())
+#streamlit.text(fruityvice_response.json())
 
 # write your own comment - It creates the table 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - It displays the data in tables
 streamlit.dataframe(fruityvice_normalized)
 
-#streamlit.dataframe(my_fruit_list)
+streamlit.dataframe(my_fruit_list)
 #Let's put a pick list here so they can pick the fruit they want to include
 #streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
 #streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 #display the table on the page
-#streamlit.dataframe(my_fruit_list)
+streamlit.dataframe(my_fruit_list)
 
 #streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 #display the table on the page
