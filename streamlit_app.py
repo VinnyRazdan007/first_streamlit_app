@@ -48,7 +48,7 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - It displays the data in tables
 streamlit.dataframe(fruityvice_normalized)
 
-streamlit.dataframe(my_fruit_list)
+#streamlit.dataframe(my_fruit_list)
 #Let's put a pick list here so they can pick the fruit they want to include
 #streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
 #streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
